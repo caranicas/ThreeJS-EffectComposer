@@ -1,0 +1,9 @@
+{
+  "name"          : "Effect Composer",
+  "version"       : "0.0.1",
+  "main"          : "index.js",
+  "dependencies"  : {
+    "threejs"  : "latest"
+  },
+  "ignore"        : ["src"]
+}
