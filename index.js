@@ -1,1 +1,1 @@
-module.exports = require('.dist/EffectComposer');
+module.exports = require('./dist/EffectComposer');

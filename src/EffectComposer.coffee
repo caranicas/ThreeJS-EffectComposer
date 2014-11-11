@@ -2,9 +2,10 @@
 
 THREE = require 'threejs'
 CopyShader = require 'copyshader'
-ShaderPass = require 'shaderpass'
 MaskPass = require 'maskpass'
 ClearMaskPass = require 'clearmaskpass'
+RenderPass = rquire 'RenderPass'
+ShaderPass = require 'shaderpass'
 
 class EffectComposer
 
@@ -14,6 +15,8 @@ class EffectComposer
   writeBuffer:null
   readBuffer:null
   passes:null
+  RenderPass:RenderPass
+  ShaderPass:ShaderPass
 
   constructor:(renderer, renderTarget) ->
     @renderer = renderer

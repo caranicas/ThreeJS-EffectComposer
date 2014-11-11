@@ -7,17 +7,16 @@
     root.EffectComposer = factory();
   }
 }(this, function() {
-var ClearMaskPass, CopyShader, EffectComposer, MaskPass, ShaderPass, THREE;
+var ClearMaskPass, CopyShader, EffectComposer, MaskPass, THREE, RenderPass, ShaderPass;
 
 THREE = require('threejs');
 
 CopyShader = require('copyshader');
 
-ShaderPass = require('shaderpass');
-
 MaskPass = require('maskpass');
-
 ClearMaskPass = require('clearmaskpass');
+RenderPass = require('renderpass');
+ShaderPass = require('shaderpass');
 
 EffectComposer = (function() {
   EffectComposer.prototype.renderer = null;
@@ -31,6 +30,9 @@ EffectComposer = (function() {
   EffectComposer.prototype.readBuffer = null;
 
   EffectComposer.prototype.passes = null;
+
+  EffectComposer.prototype.RenderPass = RenderPass;
+  EffectComposer.prototype.ShaderPass = ShaderPass;
 
   function EffectComposer(renderer, renderTarget) {
     var height, parameters, width;
