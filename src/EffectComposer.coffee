@@ -1,11 +1,11 @@
 #All files originally authroed by @alteredq - http://alteredqualia.com/
 
 THREE = require 'threejs'
-CopyShader = require 'copyshader'
-MaskPass = require 'maskpass'
-ClearMaskPass = require 'clearmaskpass'
-RenderPass = rquire 'RenderPass'
-ShaderPass = require 'shaderpass'
+CopyShader = require './copyshader'
+MaskPass = require './maskpass'
+ClearMaskPass = require './clearmaskpass'
+RenderPass = rquire './renderpass'
+ShaderPass = require './shaderpass'
 
 class EffectComposer
 

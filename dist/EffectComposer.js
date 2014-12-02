@@ -11,12 +11,12 @@ var ClearMaskPass, CopyShader, EffectComposer, MaskPass, THREE, RenderPass, Shad
 
 THREE = require('threejs');
 
-CopyShader = require('copyshader');
+CopyShader = require('./copyshader');
 
-MaskPass = require('maskpass');
-ClearMaskPass = require('clearmaskpass');
-RenderPass = require('renderpass');
-ShaderPass = require('shaderpass');
+MaskPass = require('./maskpass');
+ClearMaskPass = require('./clearmaskpass');
+RenderPass = require('./renderpass');
+ShaderPass = require('./shaderpass');
 
 EffectComposer = (function() {
   EffectComposer.prototype.renderer = null;
