@@ -9,4 +9,5 @@ The purpose of the library is to enable a more modern work flow for web sites th
 
 [Source Code](https://github.com/mrdoob/three.js/tree/1769fbfc6c994b51a54c15a5c096855fd3cb8a1a/examples/js/postprocessing)
 
-
+***
+[Example Implementation](https://github.com/caranicas/ThreeJS-Boilerplate)
